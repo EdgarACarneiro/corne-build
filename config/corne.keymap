@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define AS(keycode) &as &kp LS(keycode) &kp keycode
+#define AS(keycode) &as LS keycode &kp keycode
 
 / {
     chosen {
@@ -36,27 +36,26 @@
         caps_word: caps_word {
             compatible = "zmk,behavior-caps-word";
         };
-    };
 
-    macros {
-        CMD_1 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N1>; };
-        CMD_2 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N2>; };
-        CMD_3 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N3>; };
-        CMD_4 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N4>; };
-        CMD_E { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp E>; };
-        CMD_O { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp O>; };
-        CMD_B { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp B>; };
-        CMDL  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp L>; }; // Cmd+Shift+L
-        CMDD  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp D>; };
-        CMDY  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp Y>; }; // Cmd+Shift+Y
-        CMDF  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp F>; };
-        CMDR  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp R>; };
-        CMDN  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N>; };
-        CMDSO { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp O>; }; // Cmd+Shift+O
-        CMDM  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LALT &kp M>; }; // Cmd+Alt+M
-        CMDK  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp K>; };
-        CMDT  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp T>; };
-        CMDA  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp A>; }; // Cmd+Shift+A
+        // IntelliJ macros as named behaviors
+        cmd_1  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N1)>; };
+        cmd_2  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N2)>; };
+        cmd_3  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N3)>; };
+        cmd_4  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N4)>; };
+        cmd_e  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(E)>; };
+        cmd_o  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(O)>; };
+        cmd_b  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(B)>; };
+        cmdl   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(L))>; };
+        cmdd   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(D)>; };
+        cmdy   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(Y))>; };
+        cmdf   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(F)>; };
+        cmdr   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(R)>; };
+        cmdn   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N)>; };
+        cmdso  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(O))>; };
+        cmdm   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LALT) LC(M)>; };
+        cmdk   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(K)>; };
+        cmdt   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(T)>; };
+        cmda   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(A))>; };
     };
 
     keymap {
@@ -98,11 +97,11 @@
         intellij_layer {
             display-name = "IntelliJ";
             bindings = <
-                &macro CMD_1 &macro CMD_2 &macro CMD_3 &macro CMD_4 &macro CMD_E
-                &macro CMD_O &macro CMD_B &macro CMDL &macro CMDD &macro CMDY
+                &cmd_1 &cmd_2 &cmd_3 &cmd_4 &cmd_e
+                &cmd_o &cmd_b &cmdl &cmdd &cmdy
 
-                &macro CMDF &macro CMDR &macro CMDN &macro CMDSO &macro CMDM
-                &macro CMDK &macro CMDT &macro CMDA &kp RIGHT &trans
+                &cmdf &cmdr &cmdn &cmdso &cmdm
+                &cmdk &cmdt &cmda &kp RIGHT &trans
 
                 &reset &trans &trans &trans &trans &trans
 
