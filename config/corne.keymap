@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define AS(keycode) &as LS keycode &kp keycode
+#define AS(keycode) &as &kp LS keycode &kp keycode
 
 / {
     chosen {
@@ -15,7 +15,7 @@
     };
 
     behaviors {
-        as: auto_shift {
+        as: as {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -24,7 +24,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        ht: hold_tap {
+        ht: ht {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -57,10 +57,7 @@
         cmdr:  cmdr  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(R)>; };
         cmdn:  cmdn  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(N)>; };
         cmdso: cmdso { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(LS(O))>; };
-
-        // FIXED: only 1 binding allowed
         cmdm:  cmdm  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(M)>; };
-
         cmdk:  cmdk  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(K)>; };
         cmdt:  cmdt  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(T)>; };
         cmda:  cmda  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(LS(A))>; };
