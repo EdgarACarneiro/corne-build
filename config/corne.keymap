@@ -57,7 +57,10 @@
         cmdr:  cmdr  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(R)>; };
         cmdn:  cmdn  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(N)>; };
         cmdso: cmdso { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(LS(O))>; };
-        cmdm:  cmdm  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(LALT) LC(M)>; };
+
+        // FIXED: only 1 binding allowed
+        cmdm:  cmdm  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(M)>; };
+
         cmdk:  cmdk  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(K)>; };
         cmdt:  cmdt  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(T)>; };
         cmda:  cmda  { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(LS(A))>; };
