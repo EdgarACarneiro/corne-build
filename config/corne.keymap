@@ -39,24 +39,24 @@
     };
 
     macros {
-        CMD_1 { compatible = "zmk,behavior-macro"; bindings = <&kp LC N1>; };
-        CMD_2 { compatible = "zmk,behavior-macro"; bindings = <&kp LC N2>; };
-        CMD_3 { compatible = "zmk,behavior-macro"; bindings = <&kp LC N3>; };
-        CMD_4 { compatible = "zmk,behavior-macro"; bindings = <&kp LC N4>; };
-        CMD_E { compatible = "zmk,behavior-macro"; bindings = <&kp LC E>; };
-        CMD_O { compatible = "zmk,behavior-macro"; bindings = <&kp LC O>; };
-        CMD_B { compatible = "zmk,behavior-macro"; bindings = <&kp LC B>; };
-        CMDL  { compatible = "zmk,behavior-macro"; bindings = <&kp LC LS L>; }; // Cmd+Shift+L
-        CMDD  { compatible = "zmk,behavior-macro"; bindings = <&kp LC D>; };
-        CMDY  { compatible = "zmk,behavior-macro"; bindings = <&kp LC LS Y>; }; // Cmd+Shift+Y
-        CMDF  { compatible = "zmk,behavior-macro"; bindings = <&kp LC F>; };
-        CMDR  { compatible = "zmk,behavior-macro"; bindings = <&kp LC R>; };
-        CMDN  { compatible = "zmk,behavior-macro"; bindings = <&kp LC N>; };
-        CMDSO { compatible = "zmk,behavior-macro"; bindings = <&kp LC LS O>; }; // Cmd+Shift+O
-        CMDM  { compatible = "zmk,behavior-macro"; bindings = <&kp LC LALT M>; }; // Cmd+Alt+M
-        CMDK  { compatible = "zmk,behavior-macro"; bindings = <&kp LC K>; };
-        CMDT  { compatible = "zmk,behavior-macro"; bindings = <&kp LC T>; };
-        CMDA  { compatible = "zmk,behavior-macro"; bindings = <&kp LC LS A>; }; // Cmd+Shift+A
+        CMD_1 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N1>; };
+        CMD_2 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N2>; };
+        CMD_3 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N3>; };
+        CMD_4 { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N4>; };
+        CMD_E { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp E>; };
+        CMD_O { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp O>; };
+        CMD_B { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp B>; };
+        CMDL  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp L>; }; // Cmd+Shift+L
+        CMDD  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp D>; };
+        CMDY  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp Y>; }; // Cmd+Shift+Y
+        CMDF  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp F>; };
+        CMDR  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp R>; };
+        CMDN  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp N>; };
+        CMDSO { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp O>; }; // Cmd+Shift+O
+        CMDM  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LALT &kp M>; }; // Cmd+Alt+M
+        CMDK  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp K>; };
+        CMDT  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp T>; };
+        CMDA  { compatible = "zmk,behavior-macro"; bindings = <&kp LC &kp LS &kp A>; }; // Cmd+Shift+A
     };
 
     keymap {
