@@ -35,10 +35,12 @@
 
         caps_word: caps_word {
             compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
         };
 
         reset: reset {
             compatible = "zmk,behavior-reset";
+            #binding-cells = <0>;
         };
 
         cmd_1: cmd_1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LC(N1)>; };
