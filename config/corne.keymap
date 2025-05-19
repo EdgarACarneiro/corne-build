@@ -56,6 +56,10 @@
         cmdk:  cmdk  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(K)>; };
         cmdt:  cmdt  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(T)>; };
         cmda:  cmda  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(A))>; };
+
+        reset: reset {
+            compatible = "zmk,behavior-reset";
+        };
     };
 
     keymap {
