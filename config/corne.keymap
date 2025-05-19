@@ -53,7 +53,7 @@
         CMDR  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(R)>; };
         CMDN  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N)>; };
         CMDSO { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(O))>; };
-        CMDM  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(LALT)) LC(M)>; };
+        CMDM  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LALT) LC(M)>; }; // Fixed
         CMDK  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(K)>; };
         CMDT  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(T)>; };
         CMDA  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(A))>; };
