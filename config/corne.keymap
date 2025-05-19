@@ -37,25 +37,25 @@
             compatible = "zmk,behavior-caps-word";
         };
 
-        // IntelliJ macros as named behaviors
-        cmd_1  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N1)>; };
-        cmd_2  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N2)>; };
-        cmd_3  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N3)>; };
-        cmd_4  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N4)>; };
-        cmd_e  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(E)>; };
-        cmd_o  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(O)>; };
-        cmd_b  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(B)>; };
-        cmdl   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(L))>; };
-        cmdd   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(D)>; };
-        cmdy   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(Y))>; };
-        cmdf   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(F)>; };
-        cmdr   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(R)>; };
-        cmdn   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N)>; };
-        cmdso  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(O))>; };
-        cmdm   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LALT) LC(M)>; };
-        cmdk   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(K)>; };
-        cmdt   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(T)>; };
-        cmda   { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(A))>; };
+        // IntelliJ macros as labeled behaviors
+        cmd_1: cmd_1 { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N1)>; };
+        cmd_2: cmd_2 { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N2)>; };
+        cmd_3: cmd_3 { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N3)>; };
+        cmd_4: cmd_4 { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N4)>; };
+        cmd_e: cmd_e { compatible = "zmk,behavior-macro"; bindings = <&kp LC(E)>; };
+        cmd_o: cmd_o { compatible = "zmk,behavior-macro"; bindings = <&kp LC(O)>; };
+        cmd_b: cmd_b { compatible = "zmk,behavior-macro"; bindings = <&kp LC(B)>; };
+        cmdl:  cmdl  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(L))>; };
+        cmdd:  cmdd  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(D)>; };
+        cmdy:  cmdy  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(Y))>; };
+        cmdf:  cmdf  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(F)>; };
+        cmdr:  cmdr  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(R)>; };
+        cmdn:  cmdn  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(N)>; };
+        cmdso: cmdso { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(O))>; };
+        cmdm:  cmdm  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LALT) LC(M)>; };
+        cmdk:  cmdk  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(K)>; };
+        cmdt:  cmdt  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(T)>; };
+        cmda:  cmda  { compatible = "zmk,behavior-macro"; bindings = <&kp LC(LS(A))>; };
     };
 
     keymap {
