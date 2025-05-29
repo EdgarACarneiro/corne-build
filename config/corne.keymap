@@ -33,7 +33,7 @@
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  F  |  P  |  G  |     |  J  |  L   |  U   |  Y   | ' |
 // |  A  |  R  |  S  |  T  |  D  |     |  H  |  N   |  E   |  I   | O | 
-// |  Z  |  X  |  C  |  V  |  B  |     |  K  |  M   | CTRL | META | . |
+// |  Z  |  X  |  C  |  V  |  B  |     |  K  |  M   | CTRL | OPT  | . |
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
